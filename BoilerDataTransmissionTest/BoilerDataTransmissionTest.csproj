@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97005917-342B-4D37-814E-7711AAA89769}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BoilerDataTransmissionTest</RootNamespace>
+    <AssemblyName>BoilerDataTransmissionTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=3.0.2.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.3.0.2\lib\net452\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ByteAttribute.cs" />
+    <Compile Include="DataGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGeneration.Designer.cs">
+      <DependentUpon>DataGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataList.Designer.cs">
+      <DependentUpon>DataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DeviceCollectionEntity.cs" />
+    <Compile Include="Entities\NJZJDeviceRunEntity.cs" />
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberRequests.Designer.cs">
+      <DependentUpon>NumberRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing.Designer.cs">
+      <DependentUpon>Timing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\ConfigIni.cs" />
+    <Compile Include="Tool\DeviceCollectionData.cs" />
+    <Compile Include="Tool\Global.cs" />
+    <Compile Include="UrlConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlConfig.Designer.cs">
+      <DependentUpon>UrlConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataGeneration.resx">
+      <DependentUpon>DataGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataList.resx">
+      <DependentUpon>DataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberRequests.resx">
+      <DependentUpon>NumberRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Timing.resx">
+      <DependentUpon>Timing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlConfig.resx">
+      <DependentUpon>UrlConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\Configure.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01fa2159ba3e52a801207534475d0d.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
