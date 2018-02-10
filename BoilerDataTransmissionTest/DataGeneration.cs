@@ -30,10 +30,10 @@ namespace BoilerDataTransmissionTest
                 model = new NJZJDeviceRunEntity
                 {
                     #region
-                    deviceNo = i.ToString().PadLeft(4, '0'),
-                    nickName = "NM-" + i.ToString().PadLeft(2, '0'),
-                    runDays = ts.Days,
-                    runHours = ts.Hours,
+                    deviceno = i.ToString().PadLeft(4, '0'),
+                    //nickname = "NM-" + i.ToString().PadLeft(2, '0'),
+                    rundays = ts.Days,
+                    runhours = ts.Hours,
                     paiyanwendugao = 1,
                     lushuiwendugao = 1,
                     chukouwendugao = 1,

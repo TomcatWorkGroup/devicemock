@@ -6,54 +6,96 @@ namespace BoilerDataTransmissionTest.Entities
     public class NJZJDeviceRunEntity
     {
         //设备编号
-        public string deviceNo;
+        public string deviceno;
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public string getDeviceNo()
         {
-            return deviceNo;
+            return deviceno;
         }
-        [Attributes.Byte(StartIndex = 0, Length = 1)]
+        [Attributes.Byte(StartIndex = 0, Length = 20)]
         public void setDeviceNo(string deviceNo)
         {
-            this.deviceNo = deviceNo;
+            this.deviceno = deviceNo;
         }
-        public string nickName;
-        public string getNickName()
+        //运行状态
+        public int runstatus;
+
+        /**
+         * 获取运行状态
+         *
+         * @return power
+         */
+        public int getRunstatus()
         {
-            return nickName;
+            return runstatus;
         }
-        [Attributes.Byte(StartIndex = 2, Length = 1)]
-        public void setNickName(string nickName)
+
+        [Attributes.Byte(StartIndex = 20, Length = 1)]
+        public void setRunstatus(int data)
         {
-            this.nickName = nickName;
+            runstatus = data;
         }
         #region ----------设备运行时间(运行状态)----------
         //设备运行天数
-        public int runDays;
+        public int rundays;
         //设备运行小时数
-        public int runHours;
+        public int runhours;
         public int getRunDays()
         {
-            return runDays;
+            return rundays;
         }
-        [Attributes.Byte(StartIndex = 22, Length = 2)]
+        [Attributes.Byte(StartIndex = 21, Length = 2)]
         public void setRunDays(int runDays)
         {
-            this.runDays = runDays;
+            this.rundays = runDays;
         }
         public int getRunHours()
         {
-            return runHours;
+            return runhours;
         }
-        [Attributes.Byte(StartIndex = 24, Length = 2)]
+        [Attributes.Byte(StartIndex = 23, Length = 2)]
         public void setRunHours(int runHours)
         {
-            this.runHours = runHours;
+            this.runhours = runHours;
         }
         #endregion
+        public int power;
+        public int getPower()
+        {
+            return power;
+        }
+        [Attributes.Byte(StartIndex = 25, Length = 1)]
+        public void setPower(int data)
+        {
+            power = data;
+        }
+
+        public int media;
+
+        /**
+         * 获取介质类型
+         *
+         * @return power
+         */
+        public int getMedia()
+        {
+            return media;
+        }
+
+        /**
+         * 设置介质类型
+         *
+         * @param data
+         */
+        [Attributes.Byte(StartIndex = 26, Length = 1)]
+        public void setMedia(int data)
+        {
+            media = data;
+        }
+        
         #region ----------设备报警信息相关属性(运行状态)----------
         //排烟温度高
         public int paiyanwendugao;

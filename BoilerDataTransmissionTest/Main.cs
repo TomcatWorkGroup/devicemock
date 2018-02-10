@@ -12,16 +12,16 @@ namespace BoilerDataTransmissionTest
 
         private void Main_Load(object sender, EventArgs e)
         {
-            this.Owner.Hide();
-            Index index = new Index
-            {
-                MdiParent = this,
-                MaximizeBox = false,
-                MinimizeBox = false,
-                ControlBox = false,
-                Dock = DockStyle.Fill
-            };
-            index.Show();
+            //this.Owner.Hide();
+            //Index index = new Index
+            //{
+            //    MdiParent = this,
+            //    MaximizeBox = false,
+            //    MinimizeBox = false,
+            //    ControlBox = false,
+            //    Dock = DockStyle.Fill
+            //};
+            //index.Show();
         }
 
       
