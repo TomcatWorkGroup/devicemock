@@ -84,6 +84,7 @@
     <Compile Include="Entities\FiledNameMap.cs" />
     <Compile Include="Entities\MyCheckBoxItem.cs" />
     <Compile Include="Entities\NJZJDeviceRunEntity.cs" />
+    <Compile Include="Entities\ParaSetting.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,12 @@
     </Compile>
     <Compile Include="NumberRequests.Designer.cs">
       <DependentUpon>NumberRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaSettingForm.Designer.cs">
+      <DependentUpon>ParaSettingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NumberRequests.resx">
       <DependentUpon>NumberRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaSettingForm.resx">
+      <DependentUpon>ParaSettingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

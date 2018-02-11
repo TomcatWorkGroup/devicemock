@@ -29,6 +29,7 @@ namespace BoilerDataTransmissionTest.Entities
             item.ByteLength = battr.Length;
             return item;
         }
+
         public int Index { get;  set; }
         public string Filed { get; set; }
         public int ByteIndex { get; set; }

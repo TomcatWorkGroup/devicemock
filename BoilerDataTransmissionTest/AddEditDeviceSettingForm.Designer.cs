@@ -160,6 +160,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "开始随机测试";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_min
@@ -255,8 +256,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_search_name);
             this.Controls.Add(this.ckbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddEditDeviceSettingForm";
-            this.Text = "AddDeviceSettingForm";
+            this.Text = "添加设备";
             this.Load += new System.EventHandler(this.AddDeviceSettingForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
