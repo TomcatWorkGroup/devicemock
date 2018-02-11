@@ -133,6 +133,10 @@ namespace BoilerDataTransmissionTest
         {
             setting = ParaSetting.Load();
             InitWorker();
+            foreach(var m in setting.Devices)
+            {
+                Add_List_View_Item(m);
+            }
         }
 
         private void DeviceListForm_FormClosing(object sender, FormClosingEventArgs e)

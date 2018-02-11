@@ -57,7 +57,7 @@
             this.Lv.Location = new System.Drawing.Point(12, 50);
             this.Lv.MultiSelect = false;
             this.Lv.Name = "Lv";
-            this.Lv.Size = new System.Drawing.Size(785, 199);
+            this.Lv.Size = new System.Drawing.Size(1038, 401);
             this.Lv.TabIndex = 0;
             this.Lv.UseCompatibleStateImageBehavior = false;
             this.Lv.View = System.Windows.Forms.View.Details;
@@ -104,7 +104,7 @@
             // Btn_Add
             // 
             this.Btn_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Add.Location = new System.Drawing.Point(722, 12);
+            this.Btn_Add.Location = new System.Drawing.Point(975, 12);
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(75, 23);
             this.Btn_Add.TabIndex = 1;
@@ -119,7 +119,7 @@
             // Btn_Para_Setting
             // 
             this.Btn_Para_Setting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Para_Setting.Location = new System.Drawing.Point(595, 12);
+            this.Btn_Para_Setting.Location = new System.Drawing.Point(848, 12);
             this.Btn_Para_Setting.Name = "Btn_Para_Setting";
             this.Btn_Para_Setting.Size = new System.Drawing.Size(75, 23);
             this.Btn_Para_Setting.TabIndex = 2;
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 261);
+            this.ClientSize = new System.Drawing.Size(1062, 463);
             this.Controls.Add(this.Btn_Start);
             this.Controls.Add(this.Btn_Para_Setting);
             this.Controls.Add(this.Btn_Add);

@@ -88,6 +88,7 @@
             this.Controls.Add(this.Txt_Interval);
             this.Controls.Add(this.label1);
             this.Name = "ParaSettingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "参数设置";
             this.Load += new System.EventHandler(this.ParaSettingForm_Load);
             this.ResumeLayout(false);

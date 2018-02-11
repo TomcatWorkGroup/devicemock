@@ -260,6 +260,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddEditDeviceSettingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "添加设备";
             this.Load += new System.EventHandler(this.AddDeviceSettingForm_Load);
             this.groupBox1.ResumeLayout(false);

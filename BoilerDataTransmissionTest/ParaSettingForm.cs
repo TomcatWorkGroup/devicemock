@@ -24,6 +24,7 @@ namespace BoilerDataTransmissionTest
         {
             setting = this.Tag as ParaSetting;
             Txt_Interval.Text = setting.TimerInterval.ToString();
+            Txt_Url.Text = setting.RequestUrl;
         }
     }
 }
