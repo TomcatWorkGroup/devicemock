@@ -47,6 +47,10 @@ namespace BoilerDataTransmissionTest
                     if (settingMap.ContainsKey(item.Filed))
                     {
                         item.IsChecked = true;
+                        item.IntValue = settingMap[item.Filed].IntValue;
+                        item.MaxValue = settingMap[item.Filed].MaxValue;
+                        item.MinValue = settingMap[item.Filed].MinValue;
+                        item.StringValue = settingMap[item.Filed].StringValue;
                     }
                     item.Description = map.getName(item.Filed);
                     setting.AddSettingItem(item);
@@ -327,6 +331,10 @@ namespace BoilerDataTransmissionTest
             if (!settingMap.ContainsKey(item.Filed))
             {
                 settingMap.Add(item.Filed, item);
+            }
+            else
+            {
+                settingMap[item.Filed] = item;
             }
         }
 

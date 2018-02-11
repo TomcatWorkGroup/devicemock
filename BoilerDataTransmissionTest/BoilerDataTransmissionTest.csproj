@@ -73,6 +73,12 @@
     <Compile Include="DataList.Designer.cs">
       <DependentUpon>DataList.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeviceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceListForm.Designer.cs">
+      <DependentUpon>DeviceListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\BaseDeviceSetting.cs" />
     <Compile Include="Entities\DeviceCollectionEntity.cs" />
     <Compile Include="Entities\FiledNameMap.cs" />
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataList.resx">
       <DependentUpon>DataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceListForm.resx">
+      <DependentUpon>DeviceListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
