@@ -54,11 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDeviceSettingForm.cs">
+    <Compile Include="AddEditDeviceSettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDeviceSettingForm.Designer.cs">
-      <DependentUpon>AddDeviceSettingForm.cs</DependentUpon>
+    <Compile Include="AddEditDeviceSettingForm.Designer.cs">
+      <DependentUpon>AddEditDeviceSettingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Attributes\ByteAttribute.cs" />
     <Compile Include="DataGeneration.cs">
@@ -119,8 +119,8 @@
     <Compile Include="UrlConfig.Designer.cs">
       <DependentUpon>UrlConfig.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddDeviceSettingForm.resx">
-      <DependentUpon>AddDeviceSettingForm.cs</DependentUpon>
+    <EmbeddedResource Include="AddEditDeviceSettingForm.resx">
+      <DependentUpon>AddEditDeviceSettingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataGeneration.resx">
       <DependentUpon>DataGeneration.cs</DependentUpon>
