@@ -175,6 +175,7 @@ namespace BoilerDataTransmissionTest
             {
                 item.IsChecked = false;
                 setting.SetChecked(item.Index, false);
+                settingMap.Remove(setting.GetSettingItem(item.Index).Filed);
             }
         }
 
